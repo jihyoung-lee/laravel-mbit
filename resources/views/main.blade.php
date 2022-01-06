@@ -21,7 +21,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="buttons">
+            <div class="button">
                 <a href="#">
                     <button class="start" type="button">시작하기</button>
                 </a>
