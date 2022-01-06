@@ -1,4 +1,8 @@
 @extends('layouts.master')
+@section('css')
+    <link rel="stylesheet" type="text/css" href="{{asset('css/reset.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+@endsection
 @section('title')
     나의 개발 유형 찾기
 @endsection
