@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="button">
-                <a href="#">
+                <a href="{{route('forms.index')}}">
                     <button class="start" type="button">시작하기</button>
                 </a>
             </div>
