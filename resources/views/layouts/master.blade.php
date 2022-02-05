@@ -9,6 +9,7 @@
     <title>@yield('title','나의 개발 유형찾기')</title>
 </head>
 <body>
-@yield('contents')
+    @yield('contents')
+    @yield('js')
 </body>
 </html>
