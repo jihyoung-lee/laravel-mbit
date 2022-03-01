@@ -46,11 +46,11 @@
                         </div>
                         <div>
                             <input id="one" type="radio" name="answer_1">
-                            <label for="one">어쩌구 개발</label>
+                            <label for="one">테스트 개발</label>
                         </div>
                         <div>
                             <input id="one" type="radio" name="answer_1">
-                            <label for="one">저쩌구 개발발</label>
+                            <label for="one">테스트2 개발발</label>
                         </div>
                     </div>
                     <div class="btn_wrap btn_sort">
@@ -86,4 +86,9 @@
             </form>
         </div>
     </section>
+@endsection
+@section('js')
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+
 @endsection
