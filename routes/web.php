@@ -3,6 +3,7 @@
 use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ResultController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,4 @@ use App\Http\Controllers\MainController;
 
 Route::get('/',[MainController::class,'index'])->name('mains.index');
 Route::get('/form',[FormController::class,'index'])->name('forms.index');
+Route::get('/result',[ResultController::class,'index'])->name('result.index');
