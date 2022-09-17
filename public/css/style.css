@@ -21,6 +21,7 @@ body{
     color: #000;
     font-family: "NEXON Lv1 Gothic OTF";
 }
+
 #main_contents{
     display: flex;
     justify-content: center;
