@@ -21,6 +21,24 @@ body{
     color: #000;
     font-family: "NEXON Lv1 Gothic OTF";
 }
+button {
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 10px;
+    font-family: "NEXON Lv1 Gothic OTF";
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #7F47DD;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    text-decoration: underline;
+}
 #main_contents{
     display: flex;
     justify-content: center;
@@ -105,9 +123,110 @@ body{
     margin-bottom: 50px;
 }
 .lectures .title{
-     text-align: center;
-     width: 400px;
+    text-align: center;
+    width: 400px;
     font-size: 30px;
     font-family: "GmarketSansBold";
     color: #EA7E7C;
+    position: relative; /* 부모의 포지션이 relative 인 경우 자식들의 absolute 기준이 따라가게된다.*/
+}
+
+.lectures p{
+    padding: 50px;
+    line-height: 1.5;
+}
+/* 양 옆으로 선을 만드는 코드 */
+.lectures .title:before, .lectures .title:after{
+    content: '';
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #EA7E7C;
+    position: absolute;
+}
+.lectures .title:before{
+    left: 0;
+    top: 50%;
+}
+.lectures .title:after {
+    right: 0;
+    top: 50%;
+
+}
+.lectures ul{
+    width: 400px;
+}
+.lectures li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.lectures a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit; /* 부모에게 상속받음 */
+    overflow: hidden;
+}
+
+.lectures a:hover img{
+    transform: scale(1.05);
+}
+
+.lectures li img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    transition: transform .5s;
+}
+
+.lectures a:hover button{
+    text-decoration: underline;
+}
+
+.lectures li h3{
+    font-family: "GmarketSansBold";
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px 20px;
+}
+
+.lectures li button{
+    background-color: #7F47DD;
+    color: #ffffff;
+
+}
+
+.share{
+     padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #EA7E7C;
+}
+
+.share button {
+    margin-bottom: 30px;
+}
+
+.facebook_share{
+    background-color: #3b5998;
+    color: #FFF
+}
+
+.kakao_share{
+    background-color: #F9E000;
+    color: #050000
+}
+
+.buttons {
+    padding-bottom: 50px;
+}
+.buttons h3{
+    padding-bottom: 20px;
+
+}
+
+.buttons button{
+    margin-bottom: 30px;
 }
