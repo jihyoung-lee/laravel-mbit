@@ -14,6 +14,7 @@ class CreateChoicesTable extends Migration
     public function up()
     {
         Schema::create('choices', function (Blueprint $table) {
+            $table->id();
             $table->string('content',100);
             $table->foreignId('developer')->references('id')->
             on('developers')->onDelete('cascade');
