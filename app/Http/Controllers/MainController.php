@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class MainController extends Controller
 {
     public function index(){
-        $data = Developer::all();
-        return view('main',['data'=>$data]);
+        $developers = Developer::all();
+        return view('main',['developers'=>$developers]);
     }
 }
