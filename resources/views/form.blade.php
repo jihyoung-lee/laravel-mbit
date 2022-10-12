@@ -8,26 +8,20 @@
 @section('contents')
     <section id="survey">
         <div class="wrapper">
-            <form id="form" action="">
+            <form id="form" action="{{@route('result.index')}}" method="post">
+                @csrf
                 @foreach($questions as $question)
                 <div class="test">
                     <div class="question_container">
                         <h3 class="number">{{$question->number}}/ </h3>
                         <h3 class="question">{{$question->content}}</h3>
                     </div>
+                    @foreach($choices as $choice)
                     <div class="answer">
                         <div> <!-- div 1개에 질문 1개 -->
                             <!-- input 과 label을 같이 가져갑니다 -->
                             <input id="one" type="radio" name="answer_1">
-                            <label for="one">게임 개발 유니티</label>
-                        </div>
-                        <div>
-                            <input id="one" type="radio" name="answer_1">
-                            <label for="one">개발1</label>
-                        </div>
-                        <div>
-                            <input id="one" type="radio" name="answer_1">
-                            <label for="one">개발2</label>
+                            <label for="one">{{$choice->content}}</label>
                         </div>
                     </div>
                     <div class="btn_wrap">
