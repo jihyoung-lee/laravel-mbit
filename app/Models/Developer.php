@@ -8,12 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Developer extends Model
 {
     use HasFactory;
-    protected $table='developers';
-    protected $fillable=
-        [
-            'id',
-            'name',
-            'count',
-        ];
 
 }
