@@ -17,4 +17,4 @@ use App\Http\Controllers\ResultController;
 
 Route::get('/',[MainController::class,'index'])->name('mains.index');
 Route::get('/form',[FormController::class,'index'])->name('forms.index');
-Route::get('/result',[ResultController::class,'index'])->name('result.index');
+Route::post('/result',[ResultController::class,'index'])->name('result.index');
