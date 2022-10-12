@@ -32,7 +32,7 @@
                         <li>
                             <a href="#" target="_blank">
                                 <img src="" alt="img">
-                                <h3>Python 어쩌고</h3>
+                                <h3>Python</h3>
                                 <button type="button">강의 보러가기</button>
                             </a>
                         </li>
