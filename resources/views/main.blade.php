@@ -17,8 +17,8 @@
                 <div class="type">
                     <ul class="type_list">
 
-                        @foreach ($data as $item)
-                        <li>{{$item->name}}</li>
+                        @foreach ($developers as $developer)
+                        <li>{{$developer->name}}</li>
                         @endforeach
                     </ul>
                 </div>
@@ -32,8 +32,8 @@
                 <div class="data_wrap">
                     <h3>참여자 수</h3>
                     <ul>
-                        @foreach ($data as $item)
-                        <li>{{$item->name}} : {{$item->count}}명</li>
+                        @foreach ($developers as $developer)
+                        <li>{{$developer->name}} : {{$developer->count}}명</li>
                         @endforeach
                     </ul>
                 </div>
