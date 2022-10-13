@@ -25,6 +25,7 @@
                             <label for="one">{{$choice->content}}</label>
                         </div>
                     </div>
+                    @endforeach
                     <div class="btn_wrap">
                         <button class="next_btn">다 음</button>
                     </div>
