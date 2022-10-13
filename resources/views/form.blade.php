@@ -13,14 +13,15 @@
                 @foreach($questions as $question)
                 <div class="test">
                     <div class="question_container">
-                        <h3 class="number">{{$question->number}}/ </h3>
+                        <h3 class="number">{{$question->number}}/{{$loop->count}} </h3>
                         <h3 class="question">{{$question->content}}</h3>
                     </div>
                     @foreach($choices as $choice)
                     <div class="answer">
                         <div> <!-- div 1개에 질문 1개 -->
                             <!-- input 과 label을 같이 가져갑니다 -->
-                            <input id="one" type="radio" name="answer_1">
+                            <input id="{{$choice->pk}}" type="radio" name="{{$question->number}}"
+                            value="{{$choice->developer->id}}">
                             <label for="one">{{$choice->content}}</label>
                         </div>
                     </div>
